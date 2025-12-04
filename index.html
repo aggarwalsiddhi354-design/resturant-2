@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ccf3f8;
+            color: #333;
+        }
+        header {
+            background: url('header.jpg') center/cover no-repeat;
+            color: rgb(243, 150, 217);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { color: orange; }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        h2 { color: #b33c00; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background: #ffe5cc;
+        }
+        img { width: 120px; border-radius: 10px; }
+
+        /* Reservation Form */
+        .reservation {
+            background: #fff3e6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #cc5200;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background: #ff751a; }
+
+        /* Customer Reviews */
+        .review-box {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #ff9933;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Authentic • Fresh • Quality</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Online Reservation</a>
+        <a href="#reviews">Customer Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- MENU SECTION -->
+        <h2 id="menu">Our Menu</h2>
+        <table>
+            <tr>
+                <th>Picture</th>
+                <th>Dish</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="https://img1.wsimg.com/isteam/stock/2982" alt="Pizza"></td>
+                <td>Margherita Pizza</td>
+                <td>Classic cheese & tomato pizza</td>
+                <td>₹299</td>
+            </tr>
+            <tr>
+                <td><img src="https://www.momontimeout.com/wp-content/uploads/2022/08/one-pot-pasta-chorizo-pasta-square.jpeg" alt="Pasta"></td>
+                <td>White Sauce Pasta</td>
+                <td>Creamy Italian-style pasta</td>
+                <td>₹249</td>
+            </tr>
+            <tr>
+                <td><img src="https://tse2.mm.bing.net/th/id/OIP.uiWoATFoHI39ii9V1pTZjQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt ="burger"></td>
+                <td>Veggie Burger</td>
+                <td>Loaded with fresh veggies</td>
+                <td>₹199</td>
+            </tr>
+        </table>
+
+        <!-- RESERVATION SECTION -->
+        <h2 id="reservation">Online Table Reservation</h2>
+        <div class="reservation">
+            <form>
+                <label>Name:</label>
+                <input type="text" required>
+
+                <label>Email:</label>
+                <input type="email" required>
+
+                <label>Phone:</label>
+                <input type="text" required>
+
+                <label>Date & Time:</label>
+                <input type="datetime-local" required>
+
+                <label>Special Request:</label>
+                <textarea rows="3"></textarea>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+        </div>
+
+        <!-- REVIEWS SECTION -->
+        <h2 id="reviews">Customer Reviews</h2>
+        <div class="review-box">
+            <strong>Aarav:</strong> Amazing food and friendly staff! ⭐⭐⭐⭐⭐
+        </div>
+        <div class="review-box">
+            <strong>Sneha:</strong> Loved the ambience and quick service ⭐⭐⭐⭐
+        </div>
+        <div class="review-box">
+            <strong>Manish:</strong> Best pizza in town! ⭐⭐⭐⭐⭐
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <h2 id="contact">Contact Us</h2>
+        <p><strong>Address:</strong> MP Nagar, Bhopal</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> contact@deliciousbites.com</p>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Delicious Bites Restaurant</p>
+    </footer>
+</body>
+</html>
